@@ -1,4 +1,5 @@
-from django.db import models
+from django.db import models 
+
 
 # Create your models here.
 class Generos(models.Model):
@@ -15,4 +16,4 @@ class Usuarios(models.Model):
     fk_generos = models.ForeignKey(Generos,on_delete=models.CASCADE)
     
     class Meta:
-        db_table = "usuarios"
+        db_table = "usuarios" 
